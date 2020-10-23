@@ -1,5 +1,10 @@
 <html>
 <head>
+  
+  <title>The Online Bookstore</title>
+ 
+  <link href="img/book_logo.png" rel="icon">
+  <link href="img/book_logo.png" rel="apple-touch-icon">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,32 +28,75 @@
 <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css.map" rel="stylesheet">
 -->
-<title>Bookstore</title>
+
 </head>
 <body>
 
 <header>
 
+<img src="img/full_logo.png" alt="Paris" class="center">
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">The Online Bookstore</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+     
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fiction
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Indian</a>
+          <a class="dropdown-item" href="#">Fantasy</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      
+       
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Non Fiction
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Sports</a>
+          <a class="dropdown-item" href="#">Animals and Birds</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+       
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">CBSE Books</a>
+          <a class="dropdown-item" href="#">ICSE Books</a>
+        </div>
       </li>
+      
+       
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Children
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Chart</a>
+          <a class="dropdown-item" href="#">Activity</a>
+        </div>
+      </li>
+      
     </ul>
+    
+      
+    
   </div>
+  <span class="navbar-text">
+     The Online Bookstore
+    </span>
 </nav>
+ 
    
    <marquee style="background-color: lightskyblue">The online heaven for all the bookreaders all there. We The Online Bookstore. No need to download anything everything online.</marquee>
     
