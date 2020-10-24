@@ -20,10 +20,12 @@
 	color: grey;
 	margin-bottom: 30px;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .sectionHeader .header {
 	font-size: 40px;
+    
 }
 
 span.header {
