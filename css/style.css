@@ -3,6 +3,11 @@
     background-color: black;
 }
 
+.opfull{
+    opacity: 1;
+    color: white;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -120,7 +125,8 @@ span.header {
 
 
 .distance{
-    margin-left: 20px;
-    margin-right: 20px;
+    overflow: hidden;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
+
