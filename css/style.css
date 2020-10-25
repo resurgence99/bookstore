@@ -42,7 +42,11 @@
 span.header {
 	font-family: civita_mediumregular, serif;
 	font-size: 30px;
-	background-color: #FFF;
+	background-color: white;
+/*
+    background-image: url(body-bg1.jpg);
+    background-attachment: fixed;
+*/
 	position: relative;
 	z-index: 50;
 	padding: 0 9px 0 9px;
@@ -154,6 +158,22 @@ span.header {
 }
 
 
+/*Background settiings of white bg cards*/
+
+.bkgrndwht{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(body-bg1.jpg); 
+    background-repeat: repeat; 
+    background-attachment: fixed;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    }
 
 
 
