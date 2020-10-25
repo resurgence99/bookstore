@@ -1,3 +1,7 @@
+
+
+
+
 .opacity{
     opacity: 0.8;
     background-color: black;
@@ -24,7 +28,7 @@
 	font-family: gotham_mediumregular, sans-serif;
 	font-size: 40px;
 	text-align: center;
-	color: grey;
+	color: #004e92;
 	margin-bottom: auto;
     margin-top: auto;
     overflow: hidden;
@@ -49,7 +53,7 @@ span.header {
 }
 
 .spbk{
-    color: black;
+    color: #004e92;
 }
 
 
@@ -87,6 +91,8 @@ span.header {
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -132,7 +138,7 @@ span.header {
 .distance{
     overflow: hidden;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /*The Footer CSS*/
@@ -146,6 +152,7 @@ span.header {
     font-family: sans-serif; 
     padding: 4px
 }
+
 
 
 
