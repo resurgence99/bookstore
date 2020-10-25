@@ -135,6 +135,18 @@ span.header {
     margin-bottom: 20px;
 }
 
+/*The Footer CSS*/
+.ftcs{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center; 
+    background-color: #185a9d;
+    color: azure; 
+    font-size: 18px; 
+    font-family: sans-serif; 
+    padding: 4px
+}
+
 
 
 
