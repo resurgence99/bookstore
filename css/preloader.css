@@ -1,15 +1,13 @@
-.spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ff6347;
-z-index: 999999;
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
 }
-
-.spinner{
-    position: absolute;
-top: 48%;
-left: 48%;
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
 }

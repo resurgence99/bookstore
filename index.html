@@ -8,6 +8,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<!--Lazy Loads Of Cards-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <!--Whatsapp Button-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/whatsapp.css">
@@ -23,6 +26,7 @@
 <!--JQuery -->
 <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+<link href="css/preloader.css" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet">
 
@@ -44,13 +48,20 @@
 
 </head>
 
-<!--CSS Spinner-->
-<div class="spinner-wrapper">
-<div class="spinner"></div>
-</div>
 
 
-<body class="" style="margin-top: 68px;background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; ">
+<body class="" style="margin-top: 68px;background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; height: 100%; ">
+
+
+<!--The pre loader-->
+    <script src="js/preloader.js"></script>
+<h1 class="ml4">
+  <span class="letters letters-1">Ready</span>
+  <span class="letters letters-2">Set</span>
+  <span class="letters letters-3">Go!</span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <header>
 
@@ -127,7 +138,8 @@
 </header>
 
 <main>
-    
+   
+<!--    Whatsapp Plugin -->
 <a href="https://api.whatsapp.com/send?phone=918073401494&text=Welcome%20to%20The%20Book%20Store%20chat%20section.%20Any%20queries%20go%20ahead." class="float whatlink" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
@@ -179,28 +191,37 @@
  
  <!--  The quote-->
   <blockquote class="blockquote text-center" style="background-color: #185a9d;color: whitesmoke; padding: 7px;">
-  <p class="mb-0">“Think before you speak. Read before you think.”</p>
-  <footer class="blockquote-footer" style="color: aliceblue;padding: 5px">Fran Lebowitz<cite title="Source Title">Source Title</cite></footer>
-</blockquote><!--The quote-->
+  <div data-aos="zoom-in" data-aos-duration="1200">
+  <p class="mb-0">“Think before you speak. Read before you think.”</p></div>
+  <div data-aos="zoom-in" data-aos-duration="2800">
+  <footer class="blockquote-footer" style="color: aliceblue;padding: 5px">Fran Lebowitz</footer>
+      </div>
+      
+</blockquote>
+
+ <!--The quote-->
   
 
 <!-- Indian Books Category starts here White Background-->
 
-<div class="bkgrndwht"   style="position: relative;" >
+<div class="bkgrndwht"  id="indian">
 
  <!--  Header for The Category  -->
-  <div class="sectionHeader" style="margin-bottom: 10px;">
+  <div class="sectionHeader" style="margin-bottom: 10px;" data-aos="zoom-in-down" data-aos-duration="2150">
 		<span class="header ver2 " style="font-size: 40px;">
                 <em><span class="spbk">Indian</span> Books</em></span>
 			</div>
 
-<!--Cards for books-->
 
+
+
+<!--Cards for books-->
 <div style="overflow: hidden;" class="">
 <div class="card-deck">
 
+
 <!--Card 1-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card" >
   <div class="flip-card-inner" >
     <div class="flip-card-front">
@@ -216,9 +237,11 @@ Westland (Publisher)</p>
   </div>
 </div>
     </div>
+    
+    
 
 <!--Card 2-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -237,7 +260,7 @@ Rupa Publications (Publisher)</p>
 
     
     <!--Card 3-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -254,7 +277,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--    Card 4-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -271,7 +294,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 5-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -288,7 +311,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 6-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -309,7 +332,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--   Load More Button Starts here-->
- <div class="cent">
+ <div class="cent" data-aos="zoom-in-down" data-aos-duration="2150">
      <button id="link1" class="btn btn-lg later" style="background-color: #004e92; color: white" type="button" data-toggle="collapse" data-target="#loadmorebooks" aria-expanded="false" aria-controls="loadmorebooks">
       Load More Books
      </button>
@@ -433,13 +456,13 @@ Rupa Publications (Publisher)</p>
 <!--    End of Indian Books Catergory-->
   
   
-  
-  <!-- Fantasy Books Category starts here Blue Background-->
+   
 
+  <!-- Fantasy Books Category starts here Blue Background-->
 <div class="bkgrnd" id="fantasy">
  
  <!--  Header for The Category  -->
-  <div class="sectionHeaderbl" style="margin-bottom: 10px">
+  <div class="sectionHeaderbl" style="margin-bottom: 10px" data-aos="zoom-in-up" data-aos-duration="2150">
 		<span class="headerbl ver2bl " style="font-size: 40px;">
                 <em><span class="">Fanstasy</span> Books</em></span>
 			</div>
@@ -449,8 +472,9 @@ Rupa Publications (Publisher)</p>
 <div style="overflow: hidden;" class="">
 <div class="card-deck">
 
+
 <!--Card 1-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">>
 <div class="flip-cardbl" >
   <div class="flip-card-innerbl" >
     <div class="flip-card-frontbl">
@@ -468,7 +492,7 @@ Westland (Publisher)</p>
     </div>
 
 <!--Card 2-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">>
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -487,7 +511,7 @@ Rupa Publications (Publisher)</p>
 
     
     <!--Card 3-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">>
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -504,7 +528,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--    Card 4-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">>
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -521,7 +545,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 5-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -538,7 +562,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 6-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -556,11 +580,11 @@ Rupa Publications (Publisher)</p>
     
     </div>
     </div>
-    </div>
+    </div>   
     
     <!--   Load More Button Starts here-->
  <div class="bkgrndbt">
- <div class="cent">
+ <div class="cent" data-aos="zoom-in-up" data-aos-duration="2150">
      <button  class="btn btn-lg" style="background-color: ghostwhite; color: #004e92" type="button" data-toggle="collapse" data-target="#loadmorebooks2" aria-expanded="false" aria-controls="loadmorebooks2">
       Load More Books
      </button>
@@ -692,7 +716,7 @@ Rupa Publications (Publisher)</p>
 <div class="bkgrndwht" id="sports">
  
  <!--  Header for The Category  -->
-  <div class="sectionHeader" style="margin-bottom: 10px">
+  <div class="sectionHeader" style="margin-bottom: 10px" data-aos="zoom-in-down" data-aos-duration="2150">
 		<span class="header ver2 " style="font-size: 40px;">
                 <em><span class="spbk">Sports</span> Books</em></span>
 			</div>
@@ -703,7 +727,7 @@ Rupa Publications (Publisher)</p>
 <div class="card-deck">
 
 <!--Card 1-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card" >
   <div class="flip-card-inner" >
     <div class="flip-card-front">
@@ -721,7 +745,7 @@ Westland (Publisher)</p>
     </div>
 
 <!--Card 2-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -740,7 +764,7 @@ Rupa Publications (Publisher)</p>
 
     
     <!--Card 3-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -757,7 +781,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--    Card 4-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -774,7 +798,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 5-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -791,7 +815,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 6-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-down" data-aos-duration="2150">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -812,13 +836,13 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--   Load More Button Starts here-->
-<div class="cent">
+<div class="cent" data-aos="zoom-in-down" data-aos-duration="2150">
      <button id="link1" class="btn btn-lg later" style="background-color: #004e92; color: white" type="button" data-toggle="collapse" data-target="#loadmorebooks3" aria-expanded="false" aria-controls="loadmorebooks3">
       Load More Books
      </button>
      </div>
   
-  <div class="collapse" id="loadmorebooks3" style="border: none;" >
+  <div class="collapse" id="loadmorebooks3" style="border: none;"  >
   <div class="card" style="border: none;">
   
   <!--   The Deck and Background property from load more options-->
@@ -942,7 +966,7 @@ Rupa Publications (Publisher)</p>
 <div class="bkgrnd" id="animalsandbirds">
  
  <!--  Header for The Category  -->
-  <div class="sectionHeaderbl" style="margin-bottom: 10px">
+  <div class="sectionHeaderbl" style="margin-bottom: 10px" data-aos="zoom-in-up" data-aos-duration="2150">
 		<span class="headerbl ver2bl " style="font-size: 40px;">
                 <em><span class="">Animals And Birds</span> Books</em></span>
 			</div>
@@ -953,7 +977,7 @@ Rupa Publications (Publisher)</p>
 <div class="card-deck">
 
 <!--Card 1-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl" >
   <div class="flip-card-innerbl" >
     <div class="flip-card-frontbl">
@@ -971,7 +995,7 @@ Westland (Publisher)</p>
     </div>
 
 <!--Card 2-->
-<div class="distance">
+<div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -990,7 +1014,7 @@ Rupa Publications (Publisher)</p>
 
     
     <!--Card 3-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -1007,7 +1031,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
 <!--    Card 4-->
-    <div class="distance">
+    <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -1024,7 +1048,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 5-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -1041,7 +1065,7 @@ Rupa Publications (Publisher)</p>
     </div>
     
     <!--Card 6-->
-     <div class="distance">
+     <div class="distance" data-aos="zoom-in-up" data-aos-duration="2150">
 <div class="flip-cardbl">
   <div class="flip-card-innerbl">
     <div class="flip-card-frontbl">
@@ -1063,7 +1087,7 @@ Rupa Publications (Publisher)</p>
     
     <!--   Load More Button Starts here-->
  <div class="bkgrndbt">
- <div class="cent">
+ <div class="cent"> <!--data-aos="zoom-in-up" data-aos-duration="2150" need ot add once another category <added--></added-->
      <button  class="btn btn-lg" style="background-color: ghostwhite; color: #004e92" type="button" data-toggle="collapse" data-target="#loadmorebooks4" aria-expanded="false" aria-controls="loadmorebooks4">
       Load More Books
      </button>
@@ -1193,11 +1217,16 @@ Rupa Publications (Publisher)</p>
 </main>
 
 
+
 <footer class="ftcs">&#169; Copyright 2020 Ganesh G</footer>
 
 
 
-
+<!--AOS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 
