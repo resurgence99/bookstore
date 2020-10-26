@@ -9,7 +9,7 @@
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: 3px 3px 4px white;
   z-index:100;
 }
 
@@ -18,5 +18,7 @@
 }
 
 .whatlink:hover{
-    color: white;
+    color: #004e92;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 4px #004e92;
 }
