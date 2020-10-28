@@ -16,6 +16,7 @@
 <!--Google analytics ends here
  -->
  
+ 
 <!-- Title Logo-->
   <link href="img/book_logo.png" rel="icon">
   <link href="img/book_logo.png" rel="apple-touch-icon">
@@ -60,22 +61,47 @@
 <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css.map" rel="stylesheet">
 -->
 
+
+<!--Preloader JS-->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+      setTimeout(function()
+                 { document.querySelector('.preloadercontainer').style.display='none';
+                           }, 2000);
+      
+      
+  });
+</script>
+
 </head>
 
 
 
 <body class="" style="margin-top: 68px;background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; height: 100%; ">
 
+<!--   Preloader-->
+  <div class="preloadercontainer">
+   <div class="bookshelf_wrapper">
+  <ul class="books_list">
+    <li class="book_item first"></li>
+    <li class="book_item second"></li>
+    <li class="book_item third"></li>
+    <li class="book_item fourth"></li>
+    <li class="book_item fifth"></li>
+    <li class="book_item sixth"></li>
+  </ul>
+  <div class="shelf"></div>
+  <div style="align-content: center" >
+     <center>
+      <img src="img/full_logo.png" style="" class="logoan">
+      </center>
+  </div>
+</div>
+   </div>
+<!--   Preloader-->
 
-<!--The pre loader-->
-    <script src="js/preloader.js"></script>
-<h1 class="ml4">
-  <span class="letters letters-1">Ready</span>
-  <span class="letters letters-2">Set</span>
-  <span class="letters letters-3">Go!</span>
-</h1>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
+     
 
 <header>
 
@@ -1242,22 +1268,13 @@ Rupa Publications (Publisher)</p>
     AOS.init();
   </script>
 
+<!--Preloader-->
 
 
 
-<!--Pre Loader-->
 
-<script>
-$(document).ready(function() {
-//Preloader
-preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-});
-</script>
+
 </body>
+
 
 </html>
