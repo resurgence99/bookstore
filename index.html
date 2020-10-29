@@ -75,9 +75,10 @@
 
 
 
-<body class="" style="margin-top: 68px;background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; height: 100%; ">
+<body class="" style="background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; height: 100%; ">
 
-
+<!--Body like div till main tag ends-->
+<div style="">
 
 
 <!--   Preloader-->
@@ -108,7 +109,7 @@
 
 <!--Navigation Bar-->
 <div>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #185a9d">
+<nav class="navbar sticky-top  navbar-expand-lg navbar-dark" style="background-color: #185a9d; " id="navtransition">
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -179,6 +180,10 @@
 </header>
 
 <main>
+  
+  
+<!--  Scoll Up Button-->
+  <button onclick="topFunction()" class="btn btn-outline-dark btn-sm" id="myBtn" title="Go to top"><b>^</b></button>
    
 <!--    Whatsapp Plugin -->
 <a href="https://api.whatsapp.com/send?phone=918073401494&text=Welcome%20to%20The%20Book%20Store%20chat%20section.%20Any%20queries%20go%20ahead." class="float whatlink" target="_blank">
@@ -1254,6 +1259,8 @@ Rupa Publications (Publisher)</p>
 
 
 </main>
+<!--From body div to main-->
+</div>
 
 
 
@@ -1262,16 +1269,36 @@ Rupa Publications (Publisher)</p>
     </footer>
 
 
+<!--The Scroll Back Up Button-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <!--AOS-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-<!--Preloader-->
 
-
+    
 
 
 
