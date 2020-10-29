@@ -140,16 +140,10 @@ span.header {
 
 
 .distance{
-    overflow: hidden;
-<<<<<<< HEAD
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-    margin-top:25px; 
-=======
+    overflow: hidden; 
     margin-left: 100px;
     margin-bottom: 30px;
->>>>>>> parent of bb446bc... margin changed
+
 }
 
 /*The Footer CSS*/
