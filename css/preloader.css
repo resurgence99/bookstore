@@ -234,7 +234,7 @@ body {
 .logoan{
     margin-top: 40px ;height: 80px; width: 250px;
       animation-name: logo;
-  animation-duration: 5s;
+  animation-duration: 1.3s;
     
     opacity: 1;
 }
