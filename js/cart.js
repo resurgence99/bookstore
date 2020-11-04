@@ -111,18 +111,44 @@ function setItems(product){
 function totalCost(product){
     
     let cartCost = localStorage.getItem('totalCost');
+    document.getElementById("result").innerHTML = localStorage.getItem("totalcost");
     
+    document.getElementById("result").innerHTML =$item.name;
     if(cartCost != null){
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalCost", cartCost + product.price);
+        // Retrieve
+  
     }
     else{
     localStorage.setItem("totalCost", product.price);
+        // Retrieve
     }
 }
 
 
+
+//function displayCart(){
+//    
+//    let cartItems = localStorage.getItem("productsInCart");
+//    cartItems = JSON.parse(cartItems);
+//    
+//    let productContainer = document.querySelector(".products");
+//    
+//    console.log(cartItems);
+//    if(cartItems && productContainer){
+//       productContainer.innerHTML = '';
+//        Object.values(cartItems).map(item => {
+//            productContainer.innerHTML += '
+//            
+//            
+//                    '
+//        })
+//    }
+//}
+
 onLoadCartNumbers();
+//displayCart();
 
 
 
