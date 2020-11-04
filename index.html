@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   
@@ -15,7 +16,6 @@
 </script>
 <!--Google analytics ends here
  -->
- 
  
 <!-- Title Logo-->
   <link href="img/book_logo.png" rel="icon">
@@ -108,6 +108,10 @@
 <div>
 <nav class="navbar sticky-top  navbar-expand-lg navbar-dark" style="background-color: #185a9d; " id="navtransition">
  
+ <span class="navbar-brand"><a href="index.html">
+     <img src="img/full_logosm.png" alt="bookstore_logo" class="center" style=""></a>
+    </span>
+ 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -152,18 +156,21 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#chart">Chart</a>
-          <a class="dropdown-item" href="#activity">Activity</a>
         </div>
       </li>
-      
-    </ul>
-    
-     
-    
-  </div>
-  <span class="navbar-text"><a href="index.html">
-     <img src="img/full_logosm.png" alt="bookstore_logo" class="center" style=""></a>
+      </ul>
+</div>
+  
+<!--  Cart-->
+  <div class="">
+  <span class="navbar-text">
+       <a href="cart.html" class="cart">
+           <ion-icon name="cart-outline" style="height: 28px; width: 28px" class=""></ion-icon></a>
+      <span class="cartcontent" style="font-size: 25px; color: white">0</span>
     </span>
+  </div>
+    
+    
 </nav>
     </div>
     
@@ -273,7 +280,7 @@
       <h1 style="font-size: 25px; padding-left: 8px; padding-right: 8px">Girl In Room 105</h1>
       <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Chetan Bhagat (Author),
 Westland (Publisher)</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
+      <p class="card-text" ><a class="cart1"><button type="button" class="add-cart btn btn-outline-light btn-lg">BUY</button></a></p>
     </div>
   </div>
 </div>
@@ -292,7 +299,7 @@ Westland (Publisher)</p>
       <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">Half Girlfriend</h1>
       <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Chetan Bhagat (Author),
 Rupa Publications (Publisher)</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg" >BUY</button></p>
+      <p class="card-text" ><button type="button" class="add-cart btn btn-outline-light btn-lg" >BUY</button></p>
     </div>
   </div>
 </div>
@@ -309,7 +316,7 @@ Rupa Publications (Publisher)</p>
     <div class="flip-card-back">
       <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">2 States</h1>
       <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Chetan Bhagat (Author)</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
+      <p class="card-text" ><button type="button" class="add-cart btn btn-outline-light btn-lg">BUY</button></p>
     </div>
   </div>
 </div>
@@ -325,7 +332,7 @@ Rupa Publications (Publisher)</p>
     <div class="flip-card-back">
       <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">A Girl To Remember</h1>
       <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">Ajay J K Panda</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
+      <p class="card-text" ><button type="button" class="add-cart btn btn-outline-light btn-lg">BUY</button></p>
     </div>
   </div>
 </div>
@@ -342,7 +349,7 @@ Rupa Publications (Publisher)</p>
       <h1 style="font-size: 15px;padding-left: 8px; padding-right: 8px">Realism in the Twentieth-Century Indian Novel: Colonial Difference and Literary Form</h1>
       <p style="font-size: 13px;padding-left: 10px; padding-right: 10px">by Ulka Anjaria (Author),
 Cambridge University Press (Publisher)</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
+      <p class="card-text" ><button type="button" class="add-cart btn btn-outline-light btn-lg">BUY</button></p>
     </div>
   </div>
 </div>
@@ -359,7 +366,7 @@ Cambridge University Press (Publisher)</p>
       <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">Chandragupta</h1>
       <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Umar Ali Shah (Author),
 Nabu Press  (Publisher)</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
+      <p class="card-text" ><button type="button" class="add-cart btn btn-outline-light btn-lg">BUY</button></p>
     </div>
   </div>
 </div>
@@ -1261,6 +1268,10 @@ Sterling Publishers Pvt Ltd (Publisher)</p>
 &#169; Copyright 2020 Ganesh G
     </footer>
 
+<!-- Cart Java Script-->
+    <script src="js/cart.js"></script>
+
+
 
 <!--The Scroll Back Up Button-->
 <script>
@@ -1284,11 +1295,15 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+
 <!--AOS-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  
+  <!-- The Cart and other ION Icons are linked from below code-->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </body>
 </html>
