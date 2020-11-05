@@ -1,4 +1,5 @@
 .bg-cart-css{
-background-image: url(body-bg-blue.jpg);
+/*background-image: url(body-bg-blue.jpg);*/
+    background-color:  #004e92;
     color: whitesmoke;
 }

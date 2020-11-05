@@ -141,12 +141,12 @@ function displayCart(){
        productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
 //          console.log(item);  
-            productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between lh-condensed">
+            productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between lg-condensed">
           <div style="color:#004e92">
             <h6 class="my-1" ><em>${item.name}</em></h6>
             <small class="text-muted">Total Copies - ${item.inCart} </small>
           </div>
-          <span class="" style="color:#004e92"><strong>₹${item.price}</strong></span>
+          <span class="" style="color:#004e92"><strong>₹${item.inCart*item.price}.00</strong></span>
         </li>`
         })
     
