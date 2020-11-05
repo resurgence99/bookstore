@@ -1,3 +1,4 @@
+
 let carts = document.querySelectorAll('.add-cart');
 
 let products = [
@@ -152,7 +153,14 @@ function displayCart(){
     productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between">
           <span style="color:#004e92" ><strong>Cart Total</strong> <small style="font-size:12px">(Includes GST)</small></span>
             <span class="" style="color:#004e92"><strong>₹${cartCost}.00</strong></span>
-        </li>`};
+        </li><br>
+
+<form class="">
+        <div class="input-group">
+            <button onclick="clearcart()" class="btn btn-light">Clear Cart</button>
+
+        </div>
+      </form>`};
 //     let totalContainer = document.querySelector(".totals");
 //    console.log(cartCost);
 }
