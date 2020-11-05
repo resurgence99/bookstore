@@ -115,38 +115,45 @@ function totalCost(product){
     if(cartCost != null){
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalCost", cartCost + product.price);
-        // Retrieve
   
     }
     else{
     localStorage.setItem("totalCost", product.price);
-        // Retrieve
     }
 }
 
 
 
-//function displayCart(){
-//    
-//    let cartItems = localStorage.getItem("productsInCart");
-//    cartItems = JSON.parse(cartItems);
-//    
-//    let productContainer = document.querySelector(".products");
-//    
+function displayCart(){
+    
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    
+    let productContainer = document.querySelector(".products");
+   
+    
+    
 //    console.log(cartItems);
-//    if(cartItems && productContainer){
-//       productContainer.innerHTML = '';
-//        Object.values(cartItems).map(item => {
-//            productContainer.innerHTML += '
-//            
-//            
-//                    '
-//        })
-//    }
-//}
+    if(cartItems && productContainer){
+       productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+          console.log(item);  
+            productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0" >${item.name}</h6>
+            <small class="text-muted">${item.tag}</small>
+          </div>
+          <span class="text-muted">$${item.price}</span>
+        </li>`
+        })
+    };
+    
+     let totalContainer = document.querySelector(".totals");
+    console.log(cartCost);
+}
 
 onLoadCartNumbers();
-//displayCart();
+displayCart();
 
 
 
