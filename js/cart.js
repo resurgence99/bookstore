@@ -141,17 +141,17 @@ function displayCart(){
         Object.values(cartItems).map(item => {
 //          console.log(item);  
             productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0" >${item.name}</h6>
-            <small class="text-muted">${item.tag}</small>
+          <div style="color:#004e92">
+            <h6 class="my-1" ><em>${item.name}</em></h6>
+            <small class="text-muted">Total Copies - ${item.inCart} </small>
           </div>
-          <span class="text-muted">₹${item.price}</span>
+          <span class="" style="color:#004e92"><strong>₹${item.price}</strong></span>
         </li>`
         })
     
     productContainer.innerHTML += `<li class="list-group-item d-flex justify-content-between">
-          <span >Cart Total (INR)</span>
-            <span class="">₹${cartCost}.00</span>
+          <span style="color:#004e92" ><strong>Cart Total (INR)</strong></span>
+            <span class="" style="color:#004e92"><strong>₹${cartCost}.00</strong></span>
         </li>`};
 //     let totalContainer = document.querySelector(".totals");
 //    console.log(cartCost);

@@ -12,6 +12,9 @@
 
     <!-- Bootstrap core CSS -->
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+<!--    Cart CSS-->
+    <link href="css/cart.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -32,10 +35,10 @@
     <!-- Custom styles for this template -->
     <link href="css/form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-light">
+  <body class="bg-cart-css" style="">
     <div class="container">
   <div class="py-5 text-center">
-    <a href="index.html"><img class="d-block mx-auto mb-4" src="img/book_logo.png" alt="" width="72" height="72"></a>
+    <a href="index.html"><img class="d-block mx-auto mb-4" src="img/full_logosm.png" alt="" width="180" height="60"></a>
     <h2>Complete YourPayment</h2>
     <p class="lead">Thank you for visiting The Online Bookstore. Have a happy online read with your purchased books</p>
   </div>
@@ -43,8 +46,8 @@
   <div class="row">
     <div class="col-md-4 order-md-2 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Your cart</span>
-        <span class="badge badge-secondary badge-pill"><span class="cartcontent">0</span></span>
+        <span class="" style="color: whitesmoke">Your cart</span>
+        <span class="badge badge-primary badge-pill" style="background-color: aliceblue"><span class="cartcontent" style="color:  black">0</span></span>
       </h4>
       
 <!--      Product container-->
@@ -128,6 +131,7 @@
           </div>
         </div>
 
+<!--
         <div class="mb-3">
           <label for="username">Username</label>
           <div class="input-group">
@@ -140,9 +144,10 @@
             </div>
           </div>
         </div>
+-->
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <label for="email">Email <!--<span class="" style="color: lightgray">(Optional)</span>--></label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
@@ -158,7 +163,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <label for="address2">Address 2 <span class="" style="color: lightgray">(Optional)</span></label>
           <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
         </div>
 
@@ -167,6 +172,7 @@
             <label for="country">Country</label>
             <select class="custom-select d-block w-100" id="country" required>
               <option value="">Choose...</option>
+              <option>India</option>
               <option>United States</option>
             </select>
             <div class="invalid-feedback">
@@ -177,6 +183,7 @@
             <label for="state">State</label>
             <select class="custom-select d-block w-100" id="state" required>
               <option value="">Choose...</option>
+              <option>Karnataka</option>
               <option>California</option>
             </select>
             <div class="invalid-feedback">
@@ -213,16 +220,18 @@
             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
             <label class="custom-control-label" for="debit">Debit card</label>
           </div>
+<!--
           <div class="custom-control custom-radio">
             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
             <label class="custom-control-label" for="paypal">PayPal</label>
           </div>
+-->
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="cc-name">Name on card</label>
             <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Full name as displayed on card</small>
+            <small class="" style="color: lightgray">Full name as displayed on card</small>
             <div class="invalid-feedback">
               Name on card is required
             </div>
@@ -252,17 +261,37 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-light btn-lg btn-block" data-toggle="modal" data-target="#thankspurchase" style="color: #004e92">Complete My Purchase</button>
       </form>
     </div>
   </div>
+  
+  <!-- Modal -->
+<div style="color: darkslategray" data-backdrop="static" class="modal fade" id="thankspurchase" tabindex="-1" aria-labelledby="thankspurchaseLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Thank You For Purchasing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: darkslategray">
+        Enjoy the joy of reading these books with us.
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary"><a href="index.html" style="text-decoration: none; color: white">Purchase More</a></button>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
+
+  <footer style="text-decoration: none;color: antiquewhite" class="my-5 pt-5 text-center text-small">
     <p class="mb-1">&copy; 2020 The Online Bookstore Ganesh G</p>
     <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
+      <li class="list-inline-item"><a style="text-decoration: none;color: antiquewhite" href="#">Privacy</a></li>
+      <li class="list-inline-item"><a style="text-decoration: none;color: antiquewhite" href="#">Terms</a></li>
+      <li class="list-inline-item"><a style="text-decoration: none;color: antiquewhite" href="#">Support</a></li>
     </ul>
   </footer>
 </div>
@@ -271,8 +300,10 @@
       console.log(localStorage.getItem('productsInCart'))</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
        <script src="js/cart.js"></script>
         <script src="js/form-validation.js"></script>
+        <!-- The Cart and other ION Icons are linked from below code-->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         </body>
 </html>
