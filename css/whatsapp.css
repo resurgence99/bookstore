@@ -23,3 +23,33 @@
     box-shadow: 3px 3px 4px #004e92;
 }
 
+
+
+/*Cart */
+
+
+.float-cart{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:110px;
+	right:40px;
+	background-color:whitesmoke;
+	color:darkblue;
+	border-radius:50px;
+    border: 2px solid #004e92;
+	text-align:center;
+  font-size:30px;
+/*box-shadow: 3px 3px 3px blue;*/
+  z-index:100;
+}
+
+.my-float-cart{
+	margin-top:16px;
+}
+.cartlink:hover{
+    color: #004e92;
+    background-color: whitesmoke;
+/*    box-shadow: 3px 3px 4px #004e92;*/
+}
+

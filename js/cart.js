@@ -111,9 +111,7 @@ function setItems(product){
 function totalCost(product){
     
     let cartCost = localStorage.getItem('totalCost');
-    document.getElementById("result").innerHTML = localStorage.getItem("totalcost");
-    
-    document.getElementById("result").innerHTML =$item.name;
+
     if(cartCost != null){
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalCost", cartCost + product.price);

@@ -1,138 +1,242 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="jquery-2.1.4.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<head>
+  
+  <title>The Online Bookstore</title>
+
+<link href="css/test.css" rel="stylesheet">
+ 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WFCSM1HDSM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WFCSM1HDSM');
+</script>
+<!--Google analytics ends here
+ -->
+ 
+<!-- Title Logo-->
+  <link href="img/book_logo.png" rel="icon">
+  <link href="img/book_logo.png" rel="apple-touch-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Lazy Loads Of Cards-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!--Whatsapp Button-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/whatsapp.css">
+
+
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
- <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  
-  
-  
-  
-  <div style="overflow: hidden;" class="row">
-<div class="card-deck column" style="">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link href="css/preloader.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/bkgrndctg.css" rel="stylesheet">
+<!--
+<link href="bootstrap-4.5.3-dist/css/bootstrap-grid.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-grid.css.map" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-grid.min.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-grid.min.css.map" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-reboot.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-reboot.css.map" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css.map" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap.css.map" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-4.5.3-dist/css/bootstrap.min.css.map" rel="stylesheet">
+-->
 
 
-<!--Card 1-->
-<div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card" >
-  <div class="flip-card-inner" >
-    <div class="flip-card-front">
-      <img src="img/ind_01.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px; padding-left: 8px; padding-right: 8px">Girl In Room 105</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Chetan Bhagat (Author),
-Westland (Publisher)</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
-    </div>
-  </div>
-</div>
-    </div>
-    
-    
+<!--Preloader JS with 2.5sec delay-->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+      setTimeout(function()
+                 { document.querySelector('.preloadercontainer').style.display='none';
+                           }, 1425);
+});
+</script>
 
-<!--Card 2-->
-<div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/ind_02.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">Half Girlfriend</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">by Chetan Bhagat (Author),
-Rupa Publications (Publisher)</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg" >BUY</button></p>
-    </div>
-  </div>
-</div>
-    </div>
+</head>
 
-    
-    <!--Card 3-->
-    <div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/ind_03.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">John Doe</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">Architect & Engineer</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
-    </div>
-  </div>
-</div>
-    </div>
-    
-<!--    Card 4-->
-    <div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/ind_04.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">John Doe</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">Architect & Engineer</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
-    </div>
-  </div>
-</div>
-    </div>
-    
-    <!--Card 5-->
-     <div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/ind_03.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">John Doe</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">Architect & Engineer</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
-    </div>
-  </div>
-</div>
-    </div>
-    
-    <!--Card 6-->
-     <div class="" data-aos="zoom-in-down" data-aos-duration="1700">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/ind_03.jpg" alt="Avatar" style="width:200px;height:310px;">
-    </div>
-    <div class="flip-card-back">
-      <h1 style="font-size: 25px;padding-left: 8px; padding-right: 8px">John Doe</h1>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">Architect & Engineer</p>
-      <p style="font-size: 15px;padding-left: 10px; padding-right: 10px">We love that guy</p>
-      <p class="card-text" ><button type="button" class="btn btn-outline-light btn-lg">BUY</button></p>
-    </div>
+
+
+<body class="" style="background-image: url(img/body-bg1.jpg); background-attachment: fixed;background-repeat: repeat; height: 100%; ">
+
+<!--Body like div till main tag ends-->
+<div style="">
+
+
+<!--   Preloader-->
+  <div class="preloadercontainer">
+   <div class="bookshelf_wrapper">
+  <ul class="books_list">
+    <li class="book_item first"></li>
+    <li class="book_item second"></li>
+    <li class="book_item third"></li>
+    <li class="book_item fourth"></li>
+    <li class="book_item fifth"></li>
+    <li class="book_item sixth"></li>
+  </ul>
+  <div class="shelf"></div>
+  <div style="align-content: center" >
+     <center>
+      <img src="img/full_logosm.png" style="" class="logoan">
+      </center>
   </div>
 </div>
    </div>
-    
-    </div>
-    </div>
-    </div>
-    
-    
-</html>
+<!--   Preloader-->
+
+   
+     
+
+<header>
+
+<!--Navigation Bar-->
+<div>
+<nav class="navbar sticky-top  navbar-expand-lg navbar-dark" style="background-color: #185a9d; " id="navtransition">
  
+ <span class="navbar-brand"><a href="index.html">
+     <img src="img/full_logosm.png" alt="bookstore_logo" class="center" style=""></a>
+    </span>
  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+     
+       <li class="nav-item dropdown" >
+        <a style="color: floralwhite" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fiction
+        </a>
+        <div  class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#indian">Indian</a>
+          <a class="dropdown-item" href="#fantasy">Fantasy</a>
+        </div>
+      </li>
+      
+       
+       <li class="nav-item dropdown">
+        <a style="color: floralwhite" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Non Fiction
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#sports">Sports</a>
+          <a class="dropdown-item" href="#animalsandbirds">Animals and Birds</a>
+        </div>
+      </li>
+       
+       <li class="nav-item dropdown">
+        <a style="color: floralwhite" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#icse">CBSE Books</a>
+          <a class="dropdown-item" href="#cbse">ICSE Books</a>
+        </div>
+      </li>
+      
+       
+       <li class="nav-item dropdown">
+        <a style="color: floralwhite" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Children
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#chart">Chart</a>
+        </div>
+      </li>
+      </ul>
+</div>
+  
+<!--  Cart-->
+  <div class="">
+  <span class="navbar-text">
+       <a href="cart.html" class="cart">
+           <ion-icon name="cart-outline" style="height: 30px; width: 30px" class=""></ion-icon></a>
+      <span class="cartcontent" style="font-size: 30px; color: white">0</span>
+    </span>
+  </div>
+    
+    
+</nav>
+    </div>
+    
+    <!--Navigation Bar-->
+
  
-  </body>
+   
+   <marquee style="background-color: #004e92; color: white;padding-top: 2px;padding-bottom: 2px; font-family: sans-serif">The dream destination for all readers out there. The online bookstore. No large file downloads. Save space in your devices by switching to online books available here.</marquee>
+    
+    
+</header>
+
+<main>
+ 
+ <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-tittle">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+        </div>         
+        <div class="products">
+            
+        </div> 
+ </div>
+  
+  
+    </main>
+
+<!-- Cart Java Script-->
+    <script src="js/cart.js"></script>
+
+
+
+<!--The Scroll Back Up Button-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--AOS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <!-- The Cart and other ION Icons are linked from below code-->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+</body>
 </html>

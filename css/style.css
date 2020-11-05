@@ -184,7 +184,7 @@ span.header {
     font-size: 29px;
   display: none;
   position: fixed;
-  bottom: 110px;
+  bottom: 185px;
   right: 43px;
   z-index: 99;
   cursor: pointer;
@@ -198,6 +198,8 @@ span.header {
     color: black;
     
 }
+
+
 
 
 
