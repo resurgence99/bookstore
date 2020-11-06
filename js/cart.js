@@ -2,6 +2,7 @@
 let carts = document.querySelectorAll('.add-cart');
 
 let products = [
+                              //indian books databse starts here
     {
         name:'Girl In Room 105',
         tag:'ind_01',
@@ -84,7 +85,93 @@ let products = [
         tag:'ind_12',
         price:82,
         inCart:0        
-    }
+    },                                 //Upto to here is indian books database
+    
+    
+                                      //fantasy books database starts here
+    {
+        name:'Faerie Tale: A Novel Of Terror & Fantasy',
+        tag:'ft_01',
+        price:25,
+        inCart:0        
+    },
+    
+    {
+        name:'Court Of Thorns & Roses',
+        tag:'ft_02',
+        price:30,
+        inCart:0        
+    },
+    
+    {
+        name:'Artemis Fowl & The Time Paradox',
+        tag:'ft_03',
+        price:25,
+        inCart:0        
+    },
+    
+    {
+        name:'Lord Of The Rings',
+        tag:'ft_04',
+        price:150,
+        inCart:0        
+    },
+    
+    {
+        name:'A Game of Thrones',
+        tag:'ft_05',
+        price:181,
+        inCart:0        
+    },
+    
+    {
+        name:'A Song of Ice and Fire Chronicle Starter',
+        tag:'ft_06',
+        price:62,
+        inCart:0        
+    },
+    
+    {
+        name:'Time Of Justice',
+        tag:'ft_07',
+        price:70,
+        inCart:0        
+    },
+    
+    {
+        name:'Slow Regard Of Silent Things',
+        tag:'ft_08',
+        price:55,
+        inCart:0        
+    },
+    
+    {
+        name:'Snapshot',
+        tag:'ft_09',
+        price:99,
+        inCart:0        
+    },
+    
+    {
+        name:'Fantastic Voyage',
+        tag:'ft_10',
+        price:111,
+        inCart:0        
+    },
+    
+    {
+        name:'Name Of The Wind',
+        tag:'ft_11',
+        price:31,
+        inCart:0        
+    },
+    
+    {
+        name:'Sands Of Mars',
+        tag:'ft_12',
+        price:51,
+        inCart:0        
+    }                                   //Upto to here is fantasy books database
     
 ]
 
