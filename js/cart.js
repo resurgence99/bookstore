@@ -4,43 +4,85 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
         name:'Girl In Room 105',
-        tag:'book1',
+        tag:'ind_01',
         price:15,
         inCart:0        
     },
     
     {
         name:'Half Girlfriend',
-        tag:'book2',
+        tag:'ind_02',
         price:18,
         inCart:0        
     },
     
     {
         name:'2 States',
-        tag:'book3',
+        tag:'ind_03',
         price:15,
         inCart:0        
     },
     
     {
         name:'A Girl To Remember',
-        tag:'book4',
+        tag:'ind_04',
         price:32,
         inCart:0        
     },
     
     {
         name:'Realism in the Twentieth-Century Indian Novel',
-        tag:'book5',
+        tag:'ind_05',
         price:25,
         inCart:0        
     },
     
     {
         name:'Chandragupta',
-        tag:'book6',
+        tag:'ind_06',
         price:45,
+        inCart:0        
+    },
+    
+    {
+        name:'Ashoka : The Great & Compassionate King',
+        tag:'ind_07',
+        price:80,
+        inCart:0        
+    },
+    
+    {
+        name:'Abhimanyu - Vol 533',
+        tag:'ind_08',
+        price:50,
+        inCart:0        
+    },
+    
+    {
+        name:'Ramayana',
+        tag:'ind_09',
+        price:250,
+        inCart:0        
+    },
+    
+    {
+        name:'Story Of Mahabharatha',
+        tag:'ind_10',
+        price:255,
+        inCart:0        
+    },
+    
+    {
+        name:'Vishnu',
+        tag:'ind_11',
+        price:45,
+        inCart:0        
+    },
+    
+    {
+        name:'Gautama Bhuddha & Origin Of Buddhism',
+        tag:'ind_12',
+        price:82,
         inCart:0        
     }
     
