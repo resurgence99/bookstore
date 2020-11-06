@@ -3,3 +3,9 @@
     background-color:  #004e92;
     color: whitesmoke;
 }
+
+.cart-link:hover{
+    color: lightblue;
+    background-color: lightblue;
+    
+}

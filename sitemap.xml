@@ -9,12 +9,17 @@
 
 <url>
   <loc>https://bookstore.ganeshg.in/</loc>
-  <lastmod>2020-10-28T16:54:29+00:00</lastmod>
+  <lastmod>2020-11-06T02:34:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://bookstore.ganeshg.in/index.html</loc>
-  <lastmod>2020-10-28T16:54:29+00:00</lastmod>
+  <lastmod>2020-11-06T02:34:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bookstore.ganeshg.in/cart.html</loc>
+  <lastmod>2020-11-06T02:34:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
