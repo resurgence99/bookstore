@@ -171,7 +171,93 @@ let products = [
         tag:'ft_12',
         price:51,
         inCart:0        
-    }                                   //Upto to here is fantasy books database
+    },                                   //Upto to here is fantasy books database
+    
+    
+                                          //sports books database starts here
+    {
+        name:'Sports Ency : Gymnastics & Cycling',
+        tag:'sp_01',
+        price:890,
+        inCart:0        
+    },
+    
+    {
+        name:'Sports Ency : Ball Sports 1',
+        tag:'sp_02',
+        price:901,
+        inCart:0        
+    },
+    
+    {
+        name:' Sports Ency : Racquet Sports & Athletics',
+        tag:'sp_03',
+        price:1000,
+        inCart:0        
+    },
+    
+    {
+        name:'Sports Ency : Target & Water Sports',
+        tag:'sp_04',
+        price:1250,
+        inCart:0        
+    },
+    
+    {
+        name:'Sports Event Management',
+        tag:'sp_05',
+        price:450,
+        inCart:0        
+    },
+    
+    {
+        name:'The Sport Business Future',
+        tag:'sp_06',
+        price:650,
+        inCart:0        
+    },
+    
+    {
+        name:'Yoga For Sports',
+        tag:'sp_07',
+        price:120,
+        inCart:0        
+    },
+    
+    {
+        name:'Complete Conditioning For Rugby',
+        tag:'sp_08',
+        price:320,
+        inCart:0        
+    },
+    
+    {
+        name:'Ferrari Sticker Book',
+        tag:'sp_09',
+        price:99,
+        inCart:0        
+    },
+    
+    {
+        name:'Physics of Sun and Star Spots (IAU S273)',
+        tag:'sp_10',
+        price:150,
+        inCart:0        
+    },
+    
+    {
+        name:'Sports',
+        tag:'sp_11',
+        price:80,
+        inCart:0        
+    },
+    
+    {
+        name:'Sports Ency : Winter & Miscellaneous',
+        tag:'sp_12',
+        price:850,
+        inCart:0        
+    }                                   //Upto to here is sports books database
     
 ]
 
