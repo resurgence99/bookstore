@@ -513,8 +513,51 @@ let products = [
         tag:'ic_12',
         price:225,
         inCart:0        
-    }                                   //Upto to here is ICSE books database
+    },                                   //Upto to here is ICSE books database
     
+                                         //Kids books database starts here
+    {
+        name:'Early Learning Educational Charts For Kids Pack Of Ten Charts',
+        tag:'k_01',
+        price:61,
+        inCart:0        
+    },
+    
+    {
+        name:'Chart Flowers',
+        tag:'k_02',
+        price:50,
+        inCart:0        
+    },
+    
+    {
+        name:'Chart Phonics',
+        tag:'k_03',
+        price:50,
+        inCart:0        
+    },
+    
+    {
+        name:'Chart Light Vehicles',
+        tag:'k_04',
+        price:50,
+        inCart:0        
+    },
+    
+    {
+        name:'Chart Heavy Vehicles',
+        tag:'k_05',
+        price:52,
+        inCart:0        
+    },
+    
+    {
+        name:'Chart Skeletal System',
+        tag:'k_06',
+        price:32,
+        inCart:0        
+    }
+                                 //upto Kids books database starts here
 ]
 
 for(let i=0;i<carts.length;i++){
