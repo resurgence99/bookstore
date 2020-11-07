@@ -268,21 +268,21 @@ let products = [
     },
     
     {
-        name:'Textbook Of Wildlife Management - 1',
+        name:'Textbook Of Wildlife Management',
         tag:'ab_02',
         price:901,
         inCart:0        
     },
     
     {
-        name:'Textbook Of Wildlife Management - 2',
+        name:'Treasures of India Wildlife',
         tag:'ab_03',
         price:1000,
         inCart:0        
     },
     
     {
-        name:'Animal Farm - 2',
+        name:'Animal Farm - 1',
         tag:'ab_04',
         price:1250,
         inCart:0        
@@ -342,7 +342,178 @@ let products = [
         tag:'ab_12',
         price:850,
         inCart:0        
-    }                                   //Upto to here is animals and birds books database
+    },                                   //Upto to here is animals and birds books database
+    
+    
+                                      //CBSE books database starts here
+    {
+        name:'Mathematics Class 11 Support Books : Cbse',
+        tag:'cb_01',
+        price:950,
+        inCart:0        
+    },
+    
+    {
+        name:'Science Class 10 Support Books : Cbse',
+        tag:'cb_02',
+        price:555,
+        inCart:0        
+    },
+    
+    {
+        name:'Economics Class 11 Set Of 2 Books : Cbse',
+        tag:'cb_03',
+        price:1230,
+        inCart:0        
+    },
+    
+    {
+        name:'Social Science Class 10 Support Books : Cbse',
+        tag:'cb_04',
+        price:350,
+        inCart:0        
+    },
+    
+    {
+        name:'Text Book Of Biology Class 12 : Cbse',
+        tag:'cb_05',
+        price:1290,
+        inCart:0        
+    },
+    
+    {
+        name:'Prisms Mathematics Work Book Class 6 : Cbse',
+        tag:'cb_06',
+        price:150,
+        inCart:0        
+    },
+    
+    {
+        name:'New Green Tree Environmental Studies Book 1 : Cbse',
+        tag:'cb_07',
+        price:88,
+        inCart:0        
+    },
+    
+    {
+        name:'Modern Abc Plus Of Biology Class 11 Set Of 2 Books : Cbse',
+        tag:'cb_08',
+        price:1100,
+        inCart:0        
+    },
+    
+    {
+        name:'Excellent Way To Excel Chemistry Work Book For 10th Board Students Based On Cbse',
+        tag:'cb_09',
+        price:250,
+        inCart:0        
+    },
+    
+    {
+        name:'Together With Physics Class 11 Lab Manual With Practical Manual : Cbse',
+        tag:'cb_10',
+        price:650,
+        inCart:0        
+    },
+    
+    {
+        name:'Together With Chemistry Lab Manual Class 11 Set Of Practical Manual With Viva Voce : Cbse',
+        tag:'cb_11',
+        price:650,
+        inCart:0        
+    },
+    
+    {
+        name:'Hindi Class 6 Ncert & Cbse Question Bank',
+        tag:'cb_12',
+        price:25,
+        inCart:0        
+    },                                   //Upto to here is CBSE books database
+    
+                                          //ICSE books database starts here
+    {
+        name:'Kannada Jnanadeepa Class 9 & 10 Icse',
+        tag:'ic_01',
+        price:180,
+        inCart:0        
+    },
+    
+    {
+        name:'Together With Biology Lab Manualclass 10 Set Of 2 Books With Practical Manual : Icse',
+        tag:'ic_02',
+        price:450,
+        inCart:0        
+    },
+    
+    {
+        name:'ICSE Social Studies, 2019 Edition, Book 3',
+        tag:'ic_03',
+        price:201,
+        inCart:0        
+    },
+    
+    {
+        name:'Icse 10 Years Solved Papers Class 10 For 2021 Examination',
+        tag:'ic_04',
+        price:850,
+        inCart:0        
+    },
+    
+    {
+        name:'Environmental Studies Based On The Latest Cisce Curriculum Book 1 : Icse',
+        tag:'ic_05',
+        price:150,
+        inCart:0        
+    },
+    
+    {
+        name:'Icse Art Of Effective English Writing For Classes 9 & 10',
+        tag:'ic_06',
+        price:621,
+        inCart:0        
+    },
+    
+    {
+        name:'Gem Guide To Biology Class 10 : Icse',
+        tag:'ic_07',
+        price:175,
+        inCart:0        
+    },
+    
+    {
+        name:'Gem Guide To Simplified Chemistry Class 10 : Icse',
+        tag:'ic_08',
+        price:140,
+        inCart:0        
+    },
+    
+    {
+        name:'ICSE Computer Studies 7',
+        tag:'ic_09',
+        price:210,
+        inCart:0        
+    },
+    
+    {
+        name:'ICSE: Geography, Class 8',
+        tag:'ic_10',
+        price:315,
+        inCart:0        
+    },
+    
+    {
+        name:'ICSE Physics - 7, 2019 Edition',
+        tag:'ic_11',
+        price:300,
+        inCart:0        
+    },
+    
+    {
+        name:'ICSE: History and Civics, Class 8',
+        tag:'ic_12',
+        price:225,
+        inCart:0        
+    }                                   //Upto to here is ICSE books database
     
 ]
 
