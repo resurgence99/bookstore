@@ -257,7 +257,92 @@ let products = [
         tag:'sp_12',
         price:850,
         inCart:0        
-    }                                   //Upto to here is sports books database
+    },                                   //Upto to here is sports books database
+    
+                                          //animals and birds books database starts here
+    {
+        name:'Snakes The Wildlife Collection',
+        tag:'ab_01',
+        price:890,
+        inCart:0        
+    },
+    
+    {
+        name:'Textbook Of Wildlife Management - 1',
+        tag:'ab_02',
+        price:901,
+        inCart:0        
+    },
+    
+    {
+        name:'Textbook Of Wildlife Management - 2',
+        tag:'ab_03',
+        price:1000,
+        inCart:0        
+    },
+    
+    {
+        name:'Animal Farm - 2',
+        tag:'ab_04',
+        price:1250,
+        inCart:0        
+    },
+    
+    {
+        name:'Animal Farm - 2',
+        tag:'ab_05',
+        price:450,
+        inCart:0        
+    },
+    
+    {
+        name:'Animal Diversity',
+        tag:'ab_06',
+        price:650,
+        inCart:0        
+    },
+    
+    {
+        name:'Bird Love',
+        tag:'ab_07',
+        price:120,
+        inCart:0        
+    },
+    
+    {
+        name:'Facts & More Birds',
+        tag:'ab_08',
+        price:320,
+        inCart:0        
+    },
+    
+    {
+        name:'Splendid Plumage Indian Birds',
+        tag:'ab_09',
+        price:99,
+        inCart:0        
+    },
+    
+    {
+        name:'Song Birds Of Southern India',
+        tag:'ab_10',
+        price:150,
+        inCart:0        
+    },
+    
+    {
+        name:'Remarkable Birds',
+        tag:'ab_11',
+        price:80,
+        inCart:0        
+    },
+    
+    {
+        name:'Birds : Basic Concepts',
+        tag:'ab_12',
+        price:850,
+        inCart:0        
+    }                                   //Upto to here is animals and birds books database
     
 ]
 
