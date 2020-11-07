@@ -121,7 +121,7 @@
     </div>
     <div class="col-md-8 order-md-1">
       <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate>
+      <form class="needs-validation" onsubmit="modal()" novalidate   >
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
@@ -269,10 +269,22 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-light btn-lg btn-block" data-toggle="modal" data-target="#thankspurchase" style="color: #004e92">Complete My Purchase</button>
+        <button type="submit" class="btn btn-light btn-lg btn-block" style="color: #004e92">Complete My Purchase</button>
       </form>
     </div>
   </div>
+  
+        <script>
+        function modal(){
+             window.alert("Thank You for the purchase Continue you shopping");
+            newpage();
+        }
+            
+            function newpage(){
+               location.href = 'index.html';
+                clearcart();
+            }
+        </script>
   
   <!-- Modal -->
 <div style="color: darkslategray" data-backdrop="static" class="modal fade" id="thankspurchase" tabindex="-1" aria-labelledby="thankspurchaseLabel" aria-hidden="true">
